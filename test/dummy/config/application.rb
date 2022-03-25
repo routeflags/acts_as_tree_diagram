@@ -13,6 +13,8 @@ require "action_controller/railtie"
 require "action_view/railtie"
 # require "action_cable/engine"
 require "rails/test_unit/railtie"
+require 'acts_as_tree'
+require "acts_as_tree_diagram"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -22,6 +24,9 @@ module Dummy
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
+
+    config.assets.enabled = true
+    config.assets.precompile += %w( application.css application.js )
 
     # Configuration for the application, engines, and railties goes here.
     #

@@ -13,8 +13,6 @@
     <% @animals.each do |animal| %>
       <tr>
         <td><%= link_to 'Show', animal %></td>
-        <td><%= link_to 'Edit', edit_animal_path(animal) %></td>
-        <td><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -22,4 +20,8 @@
 
 <br>
 
-<%= link_to 'New Animal', new_animal_path %>
+
+<% Animal.walk_tree do |page, level| %>
+  <%= link_to "#{'-'*level}#{page.name}", animal_path(page) %><br />
+<% end %>
+
