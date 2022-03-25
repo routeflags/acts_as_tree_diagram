@@ -5,6 +5,8 @@
 <table>
   <thead>
     <tr>
+      <th>Name</th>
+      <th>Parent</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +14,9 @@
   <tbody>
     <% @animals.each do |animal| %>
       <tr>
+        <td><%= link_to animal.name, animal %></td>
+        <td><%= animal.parent_id %></td>
+        <td><%= exclamatize(animal.name.to_s) %></td>
         <td><%= link_to 'Show', animal %></td>
       </tr>
     <% end %>
