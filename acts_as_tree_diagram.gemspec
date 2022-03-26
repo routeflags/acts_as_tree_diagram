@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['smapira@routeflags.com']
   spec.summary       = 'Draws a tree diagram from a acts_as_tree model'
   spec.description   = 'Draws a tree diagram from a acts_as_tree model'
-  spec.homepage      = 'https://bitbucket.org/routeflagsinc/acts_as_tree_diagram/'
+  spec.homepage      = 'https://github.com/smapira/acts_as_tree_diagram'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
