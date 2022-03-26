@@ -5,4 +5,5 @@
 /tmp/
 /test/dummy/log/*.log
 /test/dummy/tmp/
+/test/dummy/db/*.sqlite3
 .idea
