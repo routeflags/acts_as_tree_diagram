@@ -9,9 +9,11 @@
       <li>
         <%= Animal.find(1).name %>
         <ul>
-          <%= Animal.draw_diagram.html_safe %>
+          <%= Animal.draw_diagram(where: { id: 1 }, path: animals_path).html_safe %>
         </ul>
       </li>
     </ul>
   </ul>
 </div>
+
+<%= link_to "New animal", new_animal_path %>
