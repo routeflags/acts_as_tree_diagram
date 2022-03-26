@@ -49,9 +49,15 @@ Or install it yourself as:
 $ gem install acts_as_tree_diagram
 ```
 
+## Test
+
+```bash
+bin/test
+```
+
 ## Stuffs
 
-Heavy depend on [ActAsTree](https://github.com/amerine/acts_as_tree) and [Tree view from unordered list](https://codepen.io/ross-angus/pen/jwxMjL). Thanks much!
+Heavy depends on [ActAsTree](https://github.com/amerine/acts_as_tree) and [Tree view from unordered list](https://codepen.io/ross-angus/pen/jwxMjL). Thanks much!
 
 ## Contributing
 Contribution directions go here.

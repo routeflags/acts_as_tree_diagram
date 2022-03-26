@@ -8,18 +8,15 @@ Gem::Specification.new do |spec|
   spec.authors       = ['smapira']
   spec.email         = ['smapira@routeflags.com']
   spec.summary       = 'Draws a tree diagram from a acts_as_tree model'
-  spec.description   = 'Draws a tree diagram from a acts_as_tree model'
+  spec.description = <<-DESCRIPTION
+    ActsAsTreeDiagram extends ActsAsTree to add simple function for draw tree diagram with html.
+  DESCRIPTION
   spec.homepage      = 'https://github.com/smapira/acts_as_tree_diagram'
   spec.license       = 'MIT'
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-
   spec.metadata['homepage_uri'] = spec.homepage
-  # spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
-
+  spec.metadata['source_code_uri'] = spec.homepage
+  spec.metadata['bug_tracker_uri'] = 'https://github.com/smapira/acts_as_tree_diagram/issues'
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
   end
@@ -31,12 +28,15 @@ Gem::Specification.new do |spec|
   # Testing dependencies
 
   # Dummy Rails app dependencies
-  spec.add_development_dependency 'actionpack'
-  spec.add_development_dependency 'activesupport'
-  spec.add_development_dependency 'json'
+  spec.add_development_dependency 'better_errors'
+  spec.add_development_dependency 'binding_of_caller'
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'bundler-audit'
+  spec.add_development_dependency 'listen'
+  spec.add_development_dependency 'pry-byebug'
   spec.add_development_dependency 'puma'
-  spec.add_development_dependency 'rubocop'
-  spec.add_development_dependency 'sprockets-rails'
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rubocop-rails'
   spec.add_development_dependency 'sqlite3'
-  spec.add_development_dependency 'uglifier'
+  spec.add_development_dependency 'web-console'
 end

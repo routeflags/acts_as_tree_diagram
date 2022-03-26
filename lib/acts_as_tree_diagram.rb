@@ -3,6 +3,8 @@ require 'acts_as_tree_diagram/railtie'
 
 module ActsAsTreeDiagram
   module ViewDiagram
+    # @param [Hash] options .
+    # @return [String]
     def draw_diagram(options = {})
       where = options.fetch :where, {}
       where(where).map { |x| draw_tree(x, options) }.join("\n")
@@ -10,6 +12,9 @@ module ActsAsTreeDiagram
 
     private
 
+    # @param [ApplicationRecord] node
+    # @param [Hash] options
+    # @return [String] html
     def draw_tree(node, options = {})
       html = ''
       node.children.each do |child|
@@ -25,6 +30,10 @@ module ActsAsTreeDiagram
       html
     end
 
+    # @param [String] path
+    # @param [ApplicationRecord] node
+    # @param [String] label
+    # @return [String] html
     def generate_tree_url(path, node, label)
       "<a href='#{path}/#{node.id}'>#{label}</a>"
     end
