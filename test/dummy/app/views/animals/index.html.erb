@@ -1,32 +1,17 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Animals</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Parent</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @animals.each do |animal| %>
-      <tr>
-        <td><%= link_to animal.name, animal %></td>
-        <td><%= animal.parent_id %></td>
-        <td><%= exclamatize(animal.name.to_s) %></td>
-        <td><%= link_to 'Show', animal %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-
-<% Animal.walk_tree do |page, level| %>
-  <%= link_to "#{'-'*level}#{page.name}", animal_path(page) %><br />
-<% end %>
-
+<div id="act_as_tree_diagram">
+  <ul class="tree">
+    <code>
+      ルート
+    </code>
+    <ul>
+      <li>
+        <%= Animal.find(1).name %>
+        <ul>
+          <%= Animal.draw_diagram.html_safe %>
+        </ul>
+      </li>
+    </ul>
+  </ul>
+</div>
