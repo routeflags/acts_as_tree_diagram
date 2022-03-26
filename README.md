@@ -19,21 +19,16 @@ end
 3. Then append the line to your view file like below:
 ```html
 <div id="act_as_tree_diagram">
-  <ul class="tree">
-    <code>
-      ルート
-    </code>
-    <ul>
-      <li>
-        <code>
-          <%= link_to Animal.find(1).name, animals_path(Animal.find(1)) %>
-        </code>
-        <ul>
-          <%= Animal.draw_diagram(where: { id: 1 }, path: animals_path).html_safe %>
-        </ul>
-      </li>
+    <ul class="tree">
+        <li>
+            <code>
+                <%= link_to Animal.find(1).name, animals_path(Animal.find(1)) %>
+            </code>
+            <ul>
+                <%= Animal.draw_diagram(where: { id: 1 }, path: animals_path).html_safe %>
+            </ul>
+        </li>
     </ul>
-  </ul>
 </div>
 ```
 
@@ -56,7 +51,7 @@ $ gem install acts_as_tree_diagram
 
 ## Stuffs
 
-Heavy depend on [ActAsTree](https://github.com/amerine/acts_as_tree) and [Pretty Clean Tree Diagram In Pure CSS &#124; CSS Script](https://www.cssscript.com/clean-tree-diagram/). Thanks much!
+Heavy depend on [ActAsTree](https://github.com/amerine/acts_as_tree) and [Tree view from unordered list](https://codepen.io/ross-angus/pen/jwxMjL). Thanks much!
 
 ## Contributing
 Contribution directions go here.

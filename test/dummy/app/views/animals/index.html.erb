@@ -2,19 +2,14 @@
 
 <div id="act_as_tree_diagram">
   <ul class="tree">
-    <code>
-      ルート
-    </code>
-    <ul>
-      <li>
-        <code>
-          <%= link_to Animal.find(1).name, animals_path(Animal.find(1)) %>
-        </code>
-        <ul>
-          <%= Animal.draw_diagram(where: { id: 1 }, path: animals_path).html_safe %>
-        </ul>
-      </li>
-    </ul>
+    <li>
+      <code>
+        <%= link_to Animal.find(1).name, animals_path(Animal.find(1)) %>
+      </code>
+      <ul>
+        <%= Animal.draw_diagram(where: { id: 1 }, path: animals_path).html_safe %>
+      </ul>
+    </li>
   </ul>
 </div>
 

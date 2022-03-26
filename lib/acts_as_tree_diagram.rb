@@ -5,7 +5,7 @@ module ActsAsTreeDiagram
   module ViewDiagram
     def draw_diagram(options = {})
       where = options.fetch :where, {}
-      where(where).map { |x| draw_tree(x, options) }.join("\n")
+      where(where).order(:parent_id).map { |x| draw_tree(x, options) }.join("\n")
     end
 
     private
