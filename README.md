@@ -52,9 +52,9 @@ Or install it yourself as:
 $ gem install acts_as_tree_diagram
 ```
 
-## Stuff
+## Stuffs
 
-Heavy depend on [ActAsTree](https://github.com/amerine/acts_as_tree). Thanks much!
+Heavy depend on [ActAsTree](https://github.com/amerine/acts_as_tree) and [Pretty Clean Tree Diagram In Pure CSS &#124; CSS Script](https://www.cssscript.com/clean-tree-diagram/). Thanks much!
 
 ## Contributing
 Contribution directions go here.

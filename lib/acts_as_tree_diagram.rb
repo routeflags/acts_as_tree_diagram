@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'acts_as_tree_diagram/version'
 require 'acts_as_tree_diagram/railtie'
 
