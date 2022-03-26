@@ -1,6 +1,8 @@
 # ActsAsTreeDiagram
 ActsAsTreeDiagram extends ActsAsTree to add simple function for draw tree diagram with html.
 
+![tree_diagram](https://user-images.githubusercontent.com/25024587/160236618-5498e757-2c3e-474a-b397-99bd6b88ea73.gif)
+
 ## Usage
 
 1. Append the following line to your `app/assets/application.scss`:
