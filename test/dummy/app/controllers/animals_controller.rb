@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class AnimalsController < ApplicationController
-  before_action :set_animal, only: [:show, :edit, :update, :destroy]
+  before_action :set_animal, only: %i[show edit update destroy]
 
   # GET /animals
   def index
@@ -7,8 +9,7 @@ class AnimalsController < ApplicationController
   end
 
   # GET /animals/1
-  def show
-  end
+  def show; end
 
   # GET /animals/new
   def new
@@ -16,15 +17,14 @@ class AnimalsController < ApplicationController
   end
 
   # GET /animals/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /animals
   def create
     @animal = Animal.new(animal_params)
 
     if @animal.save
-      redirect_to @animal, notice: "Animal was successfully created."
+      redirect_to @animal, notice: 'Animal was successfully created.'
     else
       render :new, status: :unprocessable_entity
     end
@@ -33,7 +33,7 @@ class AnimalsController < ApplicationController
   # PATCH/PUT /animals/1
   def update
     if @animal.update(animal_params)
-      redirect_to @animal, notice: "Animal was successfully updated."
+      redirect_to @animal, notice: 'Animal was successfully updated.'
     else
       render :edit, status: :unprocessable_entity
     end
@@ -42,10 +42,11 @@ class AnimalsController < ApplicationController
   # DELETE /animals/1
   def destroy
     @animal.destroy
-    redirect_to animals_url, notice: "Animal was successfully destroyed."
+    redirect_to animals_url, notice: 'Animal was successfully destroyed.'
   end
 
   private
+
   # Use callbacks to share common setup or constraints between actions.
   def set_animal
     @animal = Animal.find(params[:id])
@@ -53,7 +54,6 @@ class AnimalsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def animal_params
-    params.fetch(:animal, {})
+    params.require(:animal).permit(:name, :parent_id)
   end
-
 end

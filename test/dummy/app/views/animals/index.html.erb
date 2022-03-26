@@ -7,7 +7,9 @@
     </code>
     <ul>
       <li>
-        <%= Animal.find(1).name %>
+        <code>
+          <%= link_to Animal.find(1).name, animals_path(Animal.find(1)) %>
+        </code>
         <ul>
           <%= Animal.draw_diagram(where: { id: 1 }, path: animals_path).html_safe %>
         </ul>
