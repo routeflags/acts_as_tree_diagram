@@ -5,7 +5,7 @@ module ActsAsTreeDiagram
   module ViewDiagram
     def draw_diagram(options = {})
       where = options.fetch :where, {}
-      where(where).order(:parent_id).map { |x| draw_tree(x, options) }.join("\n")
+      where(where).map { |x| draw_tree(x, options) }.join("\n")
     end
 
     private
@@ -22,7 +22,7 @@ module ActsAsTreeDiagram
         html.concat "<ul>#{draw_tree(child, options)}</ul>" if child.children.any?
         html.concat '</li>'
       end
-      html.html_safe
+      html
     end
 
     def generate_tree_url(path, node, label)
