@@ -6,17 +6,18 @@ Gem::Specification.new do |spec|
   spec.name        = 'acts_as_tree_diagram'
   spec.version     = ActsAsTreeDiagram::VERSION
   spec.authors       = ['smapira']
-  spec.email         = ['smapira@routeflags.com']
-  spec.summary       = 'Draws a tree diagram from a acts_as_tree model'
+  spec.email       = ["25024587+smapira@users.noreply.github.com"]
+	spec.summary       = 'Draws a tree diagram from a acts_as_tree model'
   spec.description = <<-DESCRIPTION
     ActsAsTreeDiagram extends ActsAsTree to add simple function for draw tree diagram with html.
   DESCRIPTION
-  spec.homepage      = 'https://github.com/smapira/acts_as_tree_diagram'
+  spec.homepage      = 'https://github.com/routeflags/acts_as_tree_diagram'
   spec.license       = 'MIT'
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = spec.homepage
-  spec.metadata['bug_tracker_uri'] = 'https://github.com/smapira/acts_as_tree_diagram/issues'
+  spec.metadata['bug_tracker_uri'] = 'https://github.com/routeflags/acts_as_tree_diagram/issues'
+  spec.metadata["changelog_uri"] = "https://github.com/routeflags/acts_as_tree_diagram//blob/main/CHANGELOG.md"
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
   end
