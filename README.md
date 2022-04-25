@@ -9,7 +9,7 @@ ActsAsTreeDiagram extends ActsAsTree to add simple function for draw tree diagra
 
 
 # See It Work
-![tree_diagram](https://user-images.githubusercontent.com/25024587/160236618-5498e757-2c3e-474a-b397-99bd6b88ea73.gif)
+![ActsAsTreeDiagram](https://user-images.githubusercontent.com/25024587/165070652-20f1c36c-6965-418d-b57b-ab3d61b1a352.gif)
 
 ## Usage
 
