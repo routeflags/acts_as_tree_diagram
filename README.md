@@ -76,22 +76,21 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Changelog
 
-TimelineRailsHelper's changelog is available [here](https://github.com/routeflags/acts_as_tree_diagram/blob/main/CHANGELOG.md.md).
+ActsAsTreeDiagram's changelog is available [here](https://github.com/routeflags/acts_as_tree_diagram/blob/main/CHANGELOG.md.md).
 
 ## Code of Conduct
 
-Everyone interacting in the PunchClock project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/routeflags/acts_as_tree_diagram/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the ActsAsTreeDiagram project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/routeflags/acts_as_tree_diagram/main/CODE_OF_CONDUCT.md).
 
 ## You may enjoy owning other libraries and my company.
 
 * [routeflagsinc / jma — Bitbucket](https://bitbucket.org/routeflagsinc/jma/src/main/)
-- for the Japan Meteorological Agency (気象庁) for searching new information simplifies.
+	- for the Japan Meteorological Agency (気象庁) for searching new information simplifies.
 * [smapira / punch_time — Bitbucket](https://bitbucket.org/smapira/punch_time/src/master/)
-- Work time calculations using punch clock.
+	- Work time calculations using punch clock.
 * [smapira / rspec-css — Bitbucket](https://bitbucket.org/smapira/rspec-css/src/master/)
-- Record your test suite's computed CSS during future test runs for deterministic and accurate tests.
+	- Record your test suite's computed CSS during future test runs for deterministic and accurate tests.
 * [routeflags/timeline_rails_helper: The TimelineRailsHelper provides a timeline_molecules_tag helper to draw a vertical time line usable with vanilla CSS.](https://github.com/routeflags/timeline_rails_helper)
-* [routeflags/acts_as_tree_diagram: ActsAsTreeDiagram extends ActsAsTree to add simple function for draw tree diagram with html.](https://github.com/routeflags/acts_as_tree_diagram)
 * [株式会社旗指物](https://blog.routeflags.com/)
 
 ## Аcknowledgment
