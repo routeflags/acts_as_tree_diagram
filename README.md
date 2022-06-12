@@ -13,8 +13,9 @@ ActsAsTreeDiagram extends ActsAsTree to add simple function for draw tree diagra
 
 ## Usage
 
-1. Append the following line to your `app/assets/application.scss`:
+1. (Optional) Append the following line to your `app/assets/application.scss`: 
 ```scss
+// If you using a sprocket
 @import 'acts_as_tree_diagram'
 ```
 2. And append the line to your model file like below:
