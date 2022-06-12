@@ -8,7 +8,7 @@ ActsAsTreeDiagram extends ActsAsTree to add simple function for draw tree diagra
 [![CircleCI](https://circleci.com/gh/routeflags/acts_as_tree_diagram.svg?style=svg)](https://circleci.com/gh/routeflags/acts_as_tree_diagram)
 
 
-# See It Work
+## See It Work
 ![ActsAsTreeDiagram](https://user-images.githubusercontent.com/25024587/165070652-20f1c36c-6965-418d-b57b-ab3d61b1a352.gif)
 
 ## Usage
@@ -94,7 +94,7 @@ Everyone interacting in the ActsAsTreeDiagram project's codebases, issue tracker
 * [routeflags/timeline_rails_helper: The TimelineRailsHelper provides a timeline_molecules_tag helper to draw a vertical time line usable with vanilla CSS.](https://github.com/routeflags/timeline_rails_helper)
 * [株式会社旗指物](https://blog.routeflags.com/)
 
-## Аcknowledgment
+## Аcknowledgments
 
 - [ActAsTree](https://github.com/amerine/acts_as_tree)
 - [Tree view from unordered list](https://codepen.io/ross-angus/pen/jwxMjL)
