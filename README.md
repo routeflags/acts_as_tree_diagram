@@ -1,5 +1,5 @@
-# ActsAsTreeDiagram
-ActsAsTreeDiagram extends ActsAsTree to add simple function for draw tree diagram with html.
+# Acts As Tree Diagram
+Acts As Tree Diagram extends ActsAsTree to add simple function for draw tree diagram with html.
 
 ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
 [![Gem Version](https://badge.fury.io/rb/acts_as_tree_diagram.svg)](https://badge.fury.io/rb/acts_as_tree_diagram)
@@ -9,7 +9,7 @@ ActsAsTreeDiagram extends ActsAsTree to add simple function for draw tree diagra
 
 
 ## See It Work
-![ActsAsTreeDiagram](https://user-images.githubusercontent.com/25024587/165070652-20f1c36c-6965-418d-b57b-ab3d61b1a352.gif)
+![Acts As Tree Diagram](https://user-images.githubusercontent.com/25024587/165070652-20f1c36c-6965-418d-b57b-ab3d61b1a352.gif)
 
 ## Usage
 
@@ -77,11 +77,11 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Changelog
 
-ActsAsTreeDiagram's changelog is available [here](https://github.com/routeflags/acts_as_tree_diagram/blob/main/CHANGELOG.md.md).
+Acts As Tree Diagram's changelog is available [here](https://github.com/routeflags/acts_as_tree_diagram/blob/main/CHANGELOG.md.md).
 
 ## Code of Conduct
 
-Everyone interacting in the ActsAsTreeDiagram project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/routeflags/acts_as_tree_diagram/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Acts As Tree Diagram project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/routeflags/acts_as_tree_diagram/main/CODE_OF_CONDUCT.md).
 
 ## You may enjoy owning other libraries and my company.
 
